@@ -3,6 +3,22 @@ import { ref } from "vue";
 import ExperienceElement from "./ExperienceElement.vue";
 
 const experiences = ref([
+    {
+    periode: "Jan 2023 - Jan 2023",
+    status: "en_cours",
+    contrat: "Stage",
+    experience: "Développeur Web",
+    entreprise: "Havas DBi",
+    competences: [
+      "php",
+      "sql",
+      "html",
+      "css",
+      "javascript",
+      "jquery",
+      "phpmyadmin",
+    ],
+  },
   {
     periode: "Jan 2024 - Jan 2024",
     status: "check",
@@ -17,12 +33,12 @@ const experiences = ref([
       "pandas",
       "numpy",
     ],
-  },
+  }
 ]);
 </script>
 
 <template>
-  <div class="bg-slate-950 text-slate-50">
+  <div class="bg-slate-950 text-slate-50 mb-44">
     <h1 class="py-20 text-center text-4xl">Experiences</h1>
     <div class="flex flex-col items-center justify-start">
       <ul class="flex w-fit flex-col justify-center">

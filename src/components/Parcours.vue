@@ -12,7 +12,7 @@ const parcours = ref([
   {
     periode: "Sep 2024 - Dec 2024",
     statut: "en_cours",
-    diplome: "Computer Science",
+    diplome: "Computer Science Major",
     etablissement: "Baruch College - New York, Manhattan",
   },
   {
@@ -31,7 +31,7 @@ const parcours = ref([
 </script>
 
 <template>
-  <div class="bg-slate-950 text-slate-50">
+  <div class="bg-slate-950 text-slate-50 mb-44">
     <h1 class="py-20 text-center text-4xl">Parcours</h1>
     <div class="flex flex-col items-center justify-start">
       <ul>

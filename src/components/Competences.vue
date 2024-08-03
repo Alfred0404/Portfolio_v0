@@ -13,7 +13,7 @@ const competences = [
 </script>
 
 <template>
-  <div class="bg-slate-950 text-slate-50">
+  <div class="bg-slate-950 text-slate-50 mb-44">
     <h1 class="py-20 text-center text-4xl">Competences</h1>
     <div class="flex items-center justify-center">
       <ul class="grid max-w-xl grid-cols-5 grid-rows-3 gap-10">

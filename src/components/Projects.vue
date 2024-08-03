@@ -35,7 +35,7 @@ const projects = ref([
 
 <template>
   <div
-    class="flex flex-col items-center justify-center bg-slate-950 text-slate-50"
+    class="mb-44 flex flex-col items-center justify-center bg-slate-950 text-slate-50"
   >
     <h1 class="py-20 text-center text-4xl">Mes projets</h1>
     <div class="mx-48 flex flex-wrap justify-center gap-10 py-10">
