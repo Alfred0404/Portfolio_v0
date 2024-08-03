@@ -2,10 +2,10 @@
 
 <template>
   <div
-    class="flex flex-col items-center justify-center border-t border-solid border-slate-800 bg-slate-950 py-10 text-slate-50"
+    class="flex flex-col items-center justify-center bg-slate-950 py-10 text-xs text-slate-50"
   >
     <a
-      class="mx-10 mb-10 w-fit rounded-lg border border-solid border-slate-600 p-4 px-10 font-bold text-slate-50 transition hover:cursor-pointer hover:border-slate-400 hover:bg-slate-900"
+      class="mx-10 mb-10 w-fit rounded-lg border border-solid border-slate-600 p-4 px-10 text-sm font-bold text-slate-50 transition hover:cursor-pointer hover:border-slate-400 hover:bg-slate-900"
       href="https://github.com/Alfred0404/Portfolio_v0"
       target="_blank"
       >Repo du projet</a

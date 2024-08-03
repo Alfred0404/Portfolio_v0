@@ -13,10 +13,10 @@ const projects = ref([
     link: "https://github.com/Alfred0404/Projet_Web_Dynamique_Sportify",
   },
   {
-    name: "Rocket League Esport Tracker",
+    name: "Rocket League Esport",
     tag_name: "Personnal project",
     description:
-      "Rocket League Esport Tracker est une application web permettant de récupérer des informations sur des matchs d'e-sport Rocket League, passé ou à venir, grâce à l'API octane.gg.",
+      "Rocket League Esport est une application web permettant de voir des informations sur des matchs d'e-sport Rocket League, passé ou à venir, grâce à l'API octane.gg.",
     stack: ["vue", "nodejs"],
     image_path: "src/assets/rl_esport.png",
     link: "https://github.com/Alfred0404/rocket-esport-vue",
@@ -51,7 +51,7 @@ const projects = ref([
       />
     </div>
     <a
-      class="mx-10 mb-10 w-fit rounded-lg border border-solid border-slate-600 p-4 px-10 font-bold text-slate-50 transition hover:cursor-pointer hover:border-slate-400 hover:bg-slate-900"
+      class="mx-10 mb-10 w-fit rounded-lg border border-solid border-slate-600 p-4 px-10 text-sm font-bold text-slate-50 transition hover:cursor-pointer hover:border-slate-400 hover:bg-slate-900"
       href="https://github.com/Alfred0404?tab=repositories"
       target="_blank"
       >Tous mes projets</a

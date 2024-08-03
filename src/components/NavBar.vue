@@ -3,7 +3,9 @@ import NavItem from "./NavItem.vue";
 </script>
 
 <template>
-  <div class="m-4 h-full w-3/5 items-center font-bold">
+  <div
+    class="m-4 flex h-full w-5/6 flex-row items-center justify-end font-bold"
+  >
     <ul class="flex items-center justify-end gap-3">
       <NavItem :name="'A propos de moi'" />
       <NavItem :name="'Projets'" />
@@ -11,5 +13,10 @@ import NavItem from "./NavItem.vue";
       <NavItem :name="'Experiences'" />
       <NavItem :name="'Compétences'" />
     </ul>
+    <a
+      class="ms-6 rounded-lg bg-slate-50 p-2 px-6 text-sm text-slate-950 transition hover:cursor-pointer hover:bg-emerald-400"
+      href="mailto:alfreddevulpian04@gmail.com"
+      >Me contacter</a
+    >
   </div>
 </template>

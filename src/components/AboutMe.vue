@@ -1,13 +1,11 @@
-<script setup>
-import Tag from "./Tag.vue";
-</script>
+<script setup></script>
 
 <template>
   <div
-    class="flex flex-row items-start justify-center gap-32 bg-slate-950 text-slate-50 mb-44"
+    class="mb-44 flex flex-row items-start justify-center gap-32 bg-slate-950 text-slate-50"
   >
     <h1 class="text-4xl">A propos de moi</h1>
-    <p class="w-2/5 text-lg leading-8 text-slate-300">
+    <p class="text-md w-2/5 leading-8 text-slate-300">
       Je suis étudiant à
       <a
         class="border-emerald-400 text-emerald-400 hover:border-b-2"

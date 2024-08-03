@@ -10,7 +10,7 @@
         >Alfred de Vulpian</span
       >
     </h1>
-    <h3 class="text-3xl">Etudiant en école d'ingénieur</h3>
+    <h3 class="text-2xl">Etudiant en école d'ingénieur</h3>
     <ul class="mt-10 flex flex-row items-center justify-center gap-10">
       <li class="w-10">
         <a target="_blank" href="https://github.com/Alfred0404"
@@ -23,7 +23,9 @@
         /></a>
       </li>
       <li class="w-10">
-        <a target="_blank" href=""><img src="../assets/mail.png" alt="" /></a>
+        <a target="_blank" href="mailto:alfreddevulpian04@gmail.com"
+          ><img src="../assets/mail.png" alt=""
+        /></a>
       </li>
     </ul>
   </div>

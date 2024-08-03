@@ -7,7 +7,7 @@ const props = defineProps(["tag_name"]);
 <template>
   <div>
     <span
-      class="rounded-md border border-solid border-slate-700 bg-slate-800 px-2 py-1 text-slate-400"
+      class="rounded-md border border-solid border-slate-700 bg-slate-800 px-2 py-1 text-xs text-slate-400"
       >{{ props.tag_name }}</span
     >
   </div>

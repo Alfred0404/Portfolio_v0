@@ -22,14 +22,14 @@ onMounted(() => {
       :style="{ '--after-display': 'block' }"
     >
       <p
-        class="relative text-xl font-bold text-slate-50 transition group-hover:text-emerald-400"
+        class="relative text-lg font-bold text-slate-50 transition group-hover:text-emerald-400"
       >
         {{ props.periode }}
       </p>
       <div class="mt-4 flex flex-row items-center justify-start gap-4">
         <svg
-          width="24"
-          height="24"
+          width="20px"
+          height="20px"
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -50,14 +50,14 @@ onMounted(() => {
             ></path>
           </g>
         </svg>
-        <p class="transition group-hover:text-emerald-500">
+        <p class="text-sm transition group-hover:text-emerald-500">
           {{ props.diplome }}
         </p>
       </div>
       <div class="mb-4 mt-1 flex flex-row items-center justify-start gap-4">
         <svg
-          width="24px"
-          height="24px"
+          width="20px"
+          height="20px"
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -85,7 +85,7 @@ onMounted(() => {
             ></path>
           </g>
         </svg>
-        <p class="transition group-hover:text-emerald-500">
+        <p class="text-sm transition group-hover:text-emerald-500">
           {{ props.etablissement }}
         </p>
       </div>
@@ -94,7 +94,7 @@ onMounted(() => {
         v-if="props.statut === 'check'"
       ></div>
       <svg
-      class="absolute -left-1 h-7 w-7"
+        class="absolute -left-1 h-7 w-7"
         v-if="props.statut === 'en_cours'"
         width="32px"
         height="32px"

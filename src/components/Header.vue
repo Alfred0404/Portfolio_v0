@@ -1,6 +1,5 @@
 <script setup>
 import NavBar from "./NavBar.vue";
-import HeroBanner from "./HeroBanner.vue";
 </script>
 
 <template>

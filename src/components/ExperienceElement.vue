@@ -30,21 +30,21 @@ onMounted(() => {
       :style="{ '--after-display': 'block' }"
     >
       <p
-        class="relative text-xl font-bold text-slate-50 transition group-hover:text-emerald-400"
+        class="relative text-lg font-bold text-slate-50 transition group-hover:text-emerald-400"
       >
         {{ props.periode }}
       </p>
       <div class="mb-1 mt-2 flex flex-row items-center justify-start gap-4">
         <p
-          class="text-lg text-slate-300 transition group-hover:text-emerald-500"
+          class="text-md text-slate-300 transition group-hover:text-emerald-500"
         >
           {{ props.contrat }}
         </p>
       </div>
       <div class="mt-1 flex flex-row items-center justify-start gap-4">
         <svg
-          width="24px"
-          height="24px"
+          width="20px"
+          height="20px"
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -65,14 +65,14 @@ onMounted(() => {
             ></path>
           </g>
         </svg>
-        <p class="transition group-hover:text-emerald-500">
+        <p class="text-sm transition group-hover:text-emerald-500">
           {{ props.experience }}
         </p>
       </div>
       <div class="mb-4 mt-1 flex flex-row items-center justify-start gap-4">
         <svg
-          width="24px"
-          height="24px"
+          width="20px"
+          height="20px"
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +90,7 @@ onMounted(() => {
             ></path>
           </g>
         </svg>
-        <p class="transition group-hover:text-emerald-500">
+        <p class="text-sm transition group-hover:text-emerald-500">
           {{ props.entreprise }}
         </p>
       </div>
@@ -104,7 +104,7 @@ onMounted(() => {
         v-if="props.status === 'check'"
       ></div>
       <svg
-      class="absolute -left-1 h-7 w-7"
+        class="absolute -left-1 h-7 w-7"
         v-if="props.status === 'en_cours'"
         width="32px"
         height="32px"
