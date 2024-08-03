@@ -14,17 +14,17 @@
     <ul class="mt-10 flex flex-row items-center justify-center gap-10">
       <li class="w-10">
         <a target="_blank" href="https://github.com/Alfred0404"
-          ><img src="../assets/github.png" alt=""
+          ><img src="/github.png" alt=""
         /></a>
       </li>
       <li class="w-10">
         <a target="_blank" href="https://www.linkedin.com/in/alfred-de-vulpian/"
-          ><img src="../assets/linkedin.png" alt=""
+          ><img src="/linkedin.png" alt=""
         /></a>
       </li>
       <li class="w-10">
         <a target="_blank" href="mailto:alfreddevulpian04@gmail.com"
-          ><img src="../assets/mail.png" alt=""
+          ><img src="/mail.png" alt=""
         /></a>
       </li>
     </ul>

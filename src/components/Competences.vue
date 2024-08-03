@@ -23,7 +23,7 @@ const competences = [
           :key="competence"
         >
           <img
-            :src="`src/assets/logo_${competence}.png`"
+            :src="`/logo_${competence}.png`"
             :alt="`${competence} logo`"
           />
         </li>

@@ -9,7 +9,7 @@ const projects = ref([
     description:
       "Sportify est un projet réalisé dans le cadre de mes études consistant en une application web de mise en relation entre client et coach sportif spécialisés dans de nombreuses disciplines.",
     stack: ["html", "css", "js", "jquery", "php", "sql", "phpmyadmin"],
-    image_path: "src/assets/sportify.png",
+    image_path: "/sportify.png",
     link: "https://github.com/Alfred0404/Projet_Web_Dynamique_Sportify",
   },
   {
@@ -18,7 +18,7 @@ const projects = ref([
     description:
       "Rocket League Esport est une application web permettant de voir des informations sur des matchs d'e-sport Rocket League, passé ou à venir, grâce à l'API octane.gg.",
     stack: ["vue", "nodejs"],
-    image_path: "src/assets/rl_esport.png",
+    image_path: "/rl_esport.png",
     link: "https://github.com/Alfred0404/rocket-esport-vue",
   },
   {
@@ -27,7 +27,7 @@ const projects = ref([
     description:
       "ECE-World est un projet réalisé dans le cadre de mes études consistant en un jeu top-down 2D contenant plusieurs mini-jeux (guitar hero, labyrinthe, etc).",
     stack: ["c", "allegro"],
-    image_path: "src/assets/eceworld.png",
+    image_path: "/eceworld.png",
     link: "https://github.com/Alfred0404/ece-world-paris-ing1-2022-2023-nintendeau",
   },
 ]);

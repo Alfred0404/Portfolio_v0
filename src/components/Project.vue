@@ -27,7 +27,7 @@ const props = defineProps([
       <li v-for="item in props.stack" :key="item">
         <img
           class="w-12"
-          :src="`src/assets/logo_${item}.png`"
+          :src="`/logo_${item}.png`"
           :alt="`${item} logo`"
         />
       </li>
