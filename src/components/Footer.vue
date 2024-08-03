@@ -10,7 +10,7 @@
       target="_blank"
       >Repo du projet</a
     >
-    <ul class="flex flex-row items-center justify-center gap-10 pb-10">
+    <ul class="flex flex-row items-center justify-center gap-6 md:gap-10 pb-10">
       <li class="w-10">
         <a target="_blank" href="https://github.com/Alfred0404"
           ><img src="../assets/github.png" alt=""
@@ -27,7 +27,7 @@
         /></a>
       </li>
     </ul>
-    <ul class="flex items-center justify-center gap-10">
+    <ul class="flex flex-col md:flex-row gap-4 items-center justify-evenly md:gap-10">
       <li><p>© Alfred de Vulpian - 2024 - tous droits réservés</p></li>
       <li>+33 7 82 91 91 49</li>
       <li>

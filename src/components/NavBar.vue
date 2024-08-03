@@ -4,7 +4,7 @@ import NavItem from "./NavItem.vue";
 
 <template>
   <div
-    class="m-4 flex h-full w-5/6 flex-row items-center justify-end font-bold"
+    class="m-4 h-full w-5/6 flex-row items-center justify-end font-bold hidden lg:flex"
   >
     <ul class="flex items-center justify-end gap-3">
       <NavItem :name="'A propos de moi'" />

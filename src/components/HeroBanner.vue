@@ -2,11 +2,11 @@
 
 <template>
   <div
-    class="flex flex-col items-center justify-center gap-5 bg-slate-950 py-80 text-slate-50"
+    class="w-full flex flex-col items-center justify-center gap-5 bg-slate-950 py-80 text-slate-50"
   >
     <h1 class="text-6xl">
       <span
-        class="bg-gradient-to-r from-emerald-400 via-emerald-300 to-cyan-400 bg-clip-text text-transparent"
+        class="lg:mx-0 mx-28 flex justify-center items-center bg-gradient-to-r from-emerald-400 via-emerald-300 to-cyan-400 bg-clip-text text-transparent"
         >Alfred de Vulpian</span
       >
     </h1>

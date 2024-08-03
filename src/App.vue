@@ -10,8 +10,8 @@ import Footer from "./components/Footer.vue";
 </script>
 
 <template>
-  <div class="bg-slate-950">
-    <Header />
+  <div class="bg-slate-950 w-full">
+    <Header/>
     <HeroBanner />
     <AboutMe />
     <Projects />
