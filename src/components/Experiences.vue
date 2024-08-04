@@ -3,22 +3,6 @@ import { ref } from "vue";
 import ExperienceElement from "./ExperienceElement.vue";
 
 const experiences = ref([
-    {
-    periode: "Jan 2023 - Jan 2023",
-    status: "en_cours",
-    contrat: "Stage",
-    experience: "Développeur Web",
-    entreprise: "Havas DBi",
-    competences: [
-      "php",
-      "sql",
-      "html",
-      "css",
-      "javascript",
-      "jquery",
-      "phpmyadmin",
-    ],
-  },
   {
     periode: "Jan 2024 - Jan 2024",
     status: "check",

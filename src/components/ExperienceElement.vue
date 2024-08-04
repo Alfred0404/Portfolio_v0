@@ -102,7 +102,7 @@ onMounted(() => {
         </li>
       </ul>
       <div
-        class="absolute -left-1 h-6 w-6 rounded-full bg-slate-600"
+        class="absolute -left-0 h-5 w-5 rounded-full bg-slate-600"
         v-if="props.status === 'check'"
       ></div>
       <svg
