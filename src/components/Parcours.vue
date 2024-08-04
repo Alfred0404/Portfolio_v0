@@ -31,7 +31,7 @@ const parcours = ref([
 </script>
 
 <template>
-  <div class="mb-44 mx-28 md:mx-0 bg-slate-950 text-slate-50">
+  <div class="mb-44 mx-20 md:mx-0 bg-slate-950 text-slate-50">
     <h1 class="py-20 text-center text-4xl">Parcours</h1>
     <div class="flex flex-col items-center justify-start">
       <ul>

@@ -2,10 +2,10 @@
 
 <template>
   <div
-    class="mb-44 w-full flex flex-col lg:flex-row lg:items-start justify-center items-center gap-32 bg-slate-950 text-slate-50"
+    class="mb-44 flex w-full flex-col items-center justify-center gap-32 bg-slate-950 text-slate-50 lg:flex-row lg:items-start"
   >
     <h1 class="text-4xl">A propos de moi</h1>
-    <p class="text-md w-2/5 leading-8 text-slate-300">
+    <p class="text-md w-3/5 lg:w-2/5 leading-8 text-slate-300">
       Je suis étudiant à
       <a
         class="border-emerald-400 text-emerald-400 hover:border-b-2"

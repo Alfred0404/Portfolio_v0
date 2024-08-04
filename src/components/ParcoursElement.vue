@@ -26,8 +26,9 @@ onMounted(() => {
       >
         {{ props.periode }}
       </p>
-      <div class="mt-4 flex flex-row items-center justify-start gap-4">
+      <div class="mt-4 flex flex-row items-center justify-start gap-4 pb-2">
         <svg
+          class="min-h-[20px] min-w-[20px]"
           width="20px"
           height="20px"
           viewBox="0 0 24 24"
@@ -56,6 +57,7 @@ onMounted(() => {
       </div>
       <div class="mb-4 mt-1 flex flex-row items-center justify-start gap-4">
         <svg
+          class="min-h-[20px] min-w-[20px]"
           width="20px"
           height="20px"
           viewBox="0 0 24 24"
@@ -94,7 +96,7 @@ onMounted(() => {
         v-if="props.statut === 'check'"
       ></div>
       <svg
-        class="absolute -left-1 h-7 w-7"
+        class="absolute -left-1 h-7 min-h-[20px] w-7 min-w-[20px]"
         v-if="props.statut === 'en_cours'"
         width="32px"
         height="32px"
