@@ -1,5 +1,7 @@
 # 📖 My Portfolio
 
+![image](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)![image](https://img.shields.io/badge/Vue%20js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D)![image](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)![image](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
+
 This first version (v.0) of my portfolio is a showcase of my work as a developer and engineering student.
 It includes sections dedicated to my projects, my technical skills, as well as my academic and professional background. The aim is to give an overview of my abilities and creativity in the field of development.
 
