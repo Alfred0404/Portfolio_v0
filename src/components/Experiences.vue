@@ -17,7 +17,31 @@ const experiences = ref([
       "pandas",
       "numpy",
     ],
-  }
+  },
+  {
+    periode: "2023 - ...",
+    status: "en_cours",
+    contrat: "",
+    experience: "Vice président Création",
+    entreprise: "Network Gaming Association",
+    competences: ["team working", "canva", "design", "communication"],
+  },
+  {
+    periode: "2012 - 2022",
+    status: "check",
+    contrat: "",
+    experience: "Scoutisme",
+    entreprise: "Troupe 1ère Mesnil-Le-Roi",
+    competences: ["leadership", "team working", "bénévolat", "communication"],
+  },
+  {
+    periode: "2023",
+    status: "check",
+    contrat: "Bénévole",
+    experience: "Aide aux devoirs",
+    entreprise: "AFEV",
+    competences: ["bénévolat", "communication", "pédagogie"],
+  },
 ]);
 </script>
 
