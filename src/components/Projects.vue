@@ -36,7 +36,8 @@ const current_project = ref([
   {
     name: "Smart Fridge - Recipe generator",
     tag_name: "Personnal project",
-    description: "Un réfrigérateur équipé de computer vision permettant de de mettre a jour son inventaire, et suggérer des recettes à base de son inventaire.",
+    description:
+      "Un réfrigérateur équipé de computer vision permettant de de mettre a jour son inventaire, et suggérer des recettes à base de son inventaire.",
     stack: ["python", "flask", "Ollama", "OpenCV", "Ultralytics", "tailwind"],
     image_path: "/smart_fridge.png",
     link: "https://github.com/Alfred0404/Smart_Fridge_Project_Code",
