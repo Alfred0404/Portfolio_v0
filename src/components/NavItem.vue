@@ -7,7 +7,7 @@ const HandlescrollToElement = () => {
     Projets: 1460,
     Parcours: 2500,
     Experiences: 3650,
-    Compétences: 4400,
+    Compétences: 4800,
   };
 
   const element_height = element_parser[props.name];
