@@ -13,11 +13,11 @@ import Footer from "./components/Footer.vue";
   <div class="bg-slate-950 w-full">
     <Header/>
     <HeroBanner />
-    <AboutMe />
+    <!-- <AboutMe /> -->
+    <Competences />
     <Projects />
     <Parcours />
     <Experiences />
-    <Competences />
     <Footer />
   </div>
 </template>

@@ -17,12 +17,20 @@ const experiences = ref([
       "pandas",
       "numpy",
     ],
-  }
+  },
+  {
+    periode: "Since Oct 2023",
+    status: "check",
+    contrat: "Stage",
+    experience: "Vice-président Création",
+    entreprise: "Association NGA - ECE Paris",
+    competences: ["teamwork", "leadership", "Communication", "organisation"],
+  },
 ]);
 </script>
 
 <template>
-  <div class="mx-20 md:mx-0 bg-slate-950 text-slate-50 mb-44">
+  <div class="mx-20 mb-44 bg-slate-950 text-slate-50 md:mx-0">
     <h1 class="py-20 text-center text-4xl">Experiences</h1>
     <div class="flex flex-col items-center justify-start">
       <ul class="flex w-fit flex-col justify-center">
