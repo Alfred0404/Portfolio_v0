@@ -27,7 +27,6 @@ const props = defineProps([
       />
       <h1 class="mx-6 text-2xl">{{ props.name }}</h1>
       <Tag class="mx-6 my-3" :tag_name="props.tag_name" />
-      <!-- <p class="mx-6 text-xs text-slate-400">{{ props.description }}</p> -->
       <ul class="mx-6 flex flex-row items-center justify-start gap-2 pb-6">
         <li
           v-for="item in props.stack"
