@@ -1,7 +1,6 @@
 <script setup>
 import Header from "./components/Header.vue";
 import HeroBanner from "./components/HeroBanner.vue";
-import AboutMe from "./components/AboutMe.vue";
 import Projects from "./components/Projects.vue";
 import Parcours from "./components/Parcours.vue";
 import Experiences from "./components/Experiences.vue";
@@ -13,11 +12,11 @@ import Footer from "./components/Footer.vue";
   <div class="bg-slate-950 w-full">
     <Header/>
     <HeroBanner />
-    <AboutMe />
+    <!-- <AboutMe /> -->
+    <Competences />
     <Projects />
     <Parcours />
     <Experiences />
-    <Competences />
     <Footer />
   </div>
 </template>

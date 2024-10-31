@@ -19,34 +19,18 @@ const experiences = ref([
     ],
   },
   {
-    periode: "2023 - ...",
-    status: "en_cours",
-    contrat: "",
-    experience: "Vice président Création",
-    entreprise: "Network Gaming Association",
-    competences: ["team working", "canva", "design", "communication"],
-  },
-  {
-    periode: "2012 - 2022",
+    periode: "Since Oct 2023",
     status: "check",
-    contrat: "",
-    experience: "Scoutisme",
-    entreprise: "Troupe 1ère Mesnil-Le-Roi",
-    competences: ["leadership", "team working", "bénévolat", "communication"],
-  },
-  {
-    periode: "2023",
-    status: "check",
-    contrat: "Bénévole",
-    experience: "Aide aux devoirs",
-    entreprise: "AFEV",
-    competences: ["bénévolat", "communication", "pédagogie"],
+    contrat: "Stage",
+    experience: "Vice-président Création",
+    entreprise: "Association NGA - ECE Paris",
+    competences: ["teamwork", "leadership", "Communication", "organisation"],
   },
 ]);
 </script>
 
 <template>
-  <div class="mx-20 md:mx-0 bg-slate-950 text-slate-50 mb-44">
+  <div class="mx-20 mb-44 bg-slate-950 text-slate-50 md:mx-0">
     <h1 class="py-20 text-center text-4xl">Experiences</h1>
     <div class="flex flex-col items-center justify-start">
       <ul class="flex w-fit flex-col justify-center">

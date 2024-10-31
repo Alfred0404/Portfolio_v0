@@ -47,7 +47,7 @@ const current_project = ref([
 
 <template>
   <div
-    class="mb-44 flex flex-col items-center justify-center bg-slate-950 text-slate-50"
+    class="mb-24 flex flex-col items-center justify-center bg-slate-950 text-slate-50"
   >
     <h1 class="py-20 text-center text-4xl">Mes projets</h1>
     <div class="mx-48 flex flex-wrap justify-center gap-10 py-10">
@@ -62,7 +62,7 @@ const current_project = ref([
         :link="project.link"
       />
     </div>
-    <h1 class="text-center text-3xl">En cours</h1>
+    <h1 class="text-center text-3xl mt-8">En cours</h1>
     <div class="mx-48 flex flex-wrap justify-center gap-10 py-10">
       <Project
         v-for="project in current_project"

@@ -1,32 +1,22 @@
-<script setup></script>
+<script setup>
+import Contact from "./Contact.vue";
+</script>
 
 <template>
-  <div
-    class="w-full flex flex-col items-center justify-center gap-5 bg-slate-950 py-80 text-slate-50"
-  >
+  <div class="w-full gap-5 bg-slate-950 px-20 sm:px-40 lg:px-80 pt-40 text-slate-50">
     <h1 class="text-6xl">
       <span
-        class="lg:mx-0 mx-28 flex justify-center items-center bg-gradient-to-r from-emerald-400 via-emerald-300 to-cyan-400 bg-clip-text text-transparent"
+        class="bg-gradient-to-r from-emerald-400 via-emerald-300 to-cyan-400 bg-clip-text text-transparent"
         >Alfred de Vulpian</span
       >
     </h1>
-    <h3 class="text-2xl">Etudiant en école d'ingénieur</h3>
-    <ul class="mt-10 flex flex-row items-center justify-center gap-10">
-      <li class="w-10">
-        <a target="_blank" href="https://github.com/Alfred0404"
-          ><img src="/github.png" alt=""
-        /></a>
-      </li>
-      <li class="w-10">
-        <a target="_blank" href="https://www.linkedin.com/in/alfred-de-vulpian/"
-          ><img src="/linkedin.png" alt=""
-        /></a>
-      </li>
-      <li class="w-10">
-        <a target="_blank" href="mailto:alfreddevulpian04@gmail.com"
-          ><img src="/mail.png" alt=""
-        /></a>
-      </li>
-    </ul>
+    <h3 class="pt-3 text-2xl">Etudiant en école d'ingénieur</h3>
+    <p class="text-md w-full lg:w-4/5 pt-3 leading-8 text-slate-300">
+      Je me spécialise en <span class="border-b border-cyan-400">Python</span>
+      dans l'objectif de m'orienter vers la
+      <span class="border-b border-cyan-400">Data Science</span> et
+      <span class="border-b border-cyan-400">l'intelligence artificielle</span>.
+    </p>
+    <Contact />
   </div>
 </template>

@@ -4,7 +4,7 @@ import NavBar from "./NavBar.vue";
 
 <template>
   <div class="flex w-full items-center justify-between bg-slate-950">
-    <img class="m-4" alt="logo" src="/icone_code.png" />
+    <img alt="logo" src="/icone_code.png" />
     <NavBar />
   </div>
 </template>
