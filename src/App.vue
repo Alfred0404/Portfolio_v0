@@ -12,7 +12,6 @@ import Footer from "./components/Footer.vue";
   <div class="bg-slate-950 w-full">
     <Header/>
     <HeroBanner />
-    <!-- <AboutMe /> -->
     <Competences />
     <Projects />
     <Parcours />

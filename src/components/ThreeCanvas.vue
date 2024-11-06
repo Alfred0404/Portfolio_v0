@@ -1,63 +1,101 @@
 <script setup>
-import { ref, onMounted } from 'vue';
-import * as THREE from 'three';
-import GUI from 'lil-gui';
-
-
-const gui = new GUI();
-
-const params = {
-    color: 0x3bd59d,
-    spin: () => {
-        cube.rotation.x += 0.05;
-        cube.rotation.y += 0.05;
-    },
-    reset: () => {
-        cube.rotation.x = 0;
-        cube.rotation.y = 0;
-    }
-
-};
-
-gui.addColor(params, 'color').onChange(() => {
-    material.color.set(params.color);
-});
-
-gui.add(params, 'spin');
-
-
-
-const target = ref();
+import { ref, onMounted } from "vue";
+import { Vector2, Vector3 } from "three";
+import * as THREE from "three";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+function setup_camera() {
+  const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
+  camera.position.set(0, 0, 7);
+  camera.lookAt(0, -1, 0);
+  return camera;
+}
 
-const renderer = new THREE.WebGLRenderer({alpha: true, antialias: true});
-renderer.setSize(300, 200);
+function setup_lights() {
+  const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+  const sunLight = new THREE.DirectionalLight(0xffffff, 3);
+  sunLight.position.set(-10, 3, 3);
+  scene.add(sunLight);
+  scene.add(ambientLight);
+}
 
-const geometry = new THREE.BoxGeometry(1, 1, 1);
-const material = new THREE.MeshBasicMaterial({ color: 0x3bd59d });
-const cube = new THREE.Mesh(geometry, material);
-scene.add(cube);
 
-camera.position.z = 3;
+function load_wall_e_head() {
+  const loader = new GLTFLoader().setPath("./src/assets/");
+  loader.load("wall_e_head.glb", (gltf) => {
+    const mesh = gltf.scene;
+    mesh.position.set(0, 0, 0);
+    mesh.scale.set(10, 10, 10);
+    mesh.lookAt(new Vector3(0, 0, 1));
+    objects.push(mesh);
+    scene.add(mesh);
+  });
+}
+
+const loader = new GLTFLoader().setPath("./src/assets/");
+function load_wall_e_lens() {
+  loader.load("wall_e_lens_eyes.glb", (gltf) => {
+    const mesh = gltf.scene;
+    mesh.position.set(0, 0, 0);
+    mesh.scale.set(10, 10, 10);
+    mesh.lookAt(new Vector3(0, 0, 1));
+    objects.push(mesh);
+
+    const material = new THREE.MeshPhysicalMaterial({
+      color: 0xffffff,
+      metalness: 1,
+      roughness: 0,
+      ior: 0.1,
+      transmission: 0.5,
+      thickness: 1,
+      transparent: true,
+      opacity: 0.7,
+      clearcoat: 1,
+      clearcoatRoughness: 0.2,
+      reflectivity: 0.2,
+    });
+    mesh.material = material;
+    scene.add(mesh);
+  });
+}
+
+// ------------ THREE SETUP ------------- //
+
+const target = ref();
+const camera = setup_camera();
+const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+const controls = new OrbitControls(camera, renderer.domElement);
+
+setup_lights();
+const objects = [];
+load_wall_e_head();
+load_wall_e_lens();
+
+const trackMouse = (event) => {
+  const mousePosition = new Vector2();
+  mousePosition.x = (event.clientX / window.innerWidth) * 2 - 1;
+  mousePosition.y = -((event.clientY / window.innerHeight) * 2 - 1);
+  const target = new Vector3(mousePosition.x, mousePosition.y, 5);
+  objects.forEach((object) => object.lookAt(target));
+};
 
 function animate() {
   requestAnimationFrame(animate);
-
-  cube.rotation.x += 0.01;
-  cube.rotation.y += 0.01;
-
   renderer.render(scene, camera);
 }
 
 onMounted(() => {
   target.value.appendChild(renderer.domElement);
+  const { clientWidth, clientHeight } = target.value;
+  renderer.setSize(clientWidth, clientHeight);
+  camera.updateProjectionMatrix();
   animate();
+  window.addEventListener("mousemove", trackMouse);
 });
 </script>
 
 <template>
-    <!-- maybe place something that follows the mouse, or a moving camera around a scene, something interactive -->
-  <div ref="target"></div>
+  <div class="hidden lg:block" ref="target"></div>
 </template>

@@ -13,7 +13,7 @@ const props = defineProps([
 
 <template>
   <div
-    class="overflow-hidden rounded-xl border border-solid border-slate-700 bg-slate-900"
+    class="overflow-hidden rounded-xl border border-solid border-slate-700 bg-slate-900 hover:border-emerald-700 transition-all"
   >
     <a
       class="flex h-fit w-80 flex-col justify-start gap-3"
