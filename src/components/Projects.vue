@@ -42,6 +42,14 @@ const current_project = ref([
     image_path: "/smart_fridge.png",
     link: "https://github.com/Alfred0404/Smart_Fridge_Project_Code",
   },
+  {
+    name: "AI_genetic_racer",
+    tag_name: "School Project",
+    description: "Entrainement d'une ia grace a un algorithme génétique, sur plusieurs circuits, dans le cadre d'un projet de cours",
+    stack: ["python"],
+    image_path: "/ai_genetic_racer.png",
+    link: "https://github.com/Alfred0404/Projet_AI"
+  }
 ]);
 </script>
 
