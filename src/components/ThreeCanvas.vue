@@ -21,7 +21,6 @@ function setup_lights() {
   scene.add(ambientLight);
 }
 
-
 function load_wall_e_head() {
   const loader = new GLTFLoader().setPath("./src/assets/");
   loader.load("wall_e_head.glb", (gltf) => {
@@ -66,7 +65,7 @@ function load_wall_e_lens() {
 const target = ref();
 const camera = setup_camera();
 const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
-const controls = new OrbitControls(camera, renderer.domElement);
+// const controls = new OrbitControls(camera, renderer.domElement);
 
 setup_lights();
 const objects = [];
@@ -89,13 +88,25 @@ function animate() {
 onMounted(() => {
   target.value.appendChild(renderer.domElement);
   const { clientWidth, clientHeight } = target.value;
-  renderer.setSize(clientWidth, clientHeight);
+  const aspectRatio = clientWidth / clientHeight;
+  camera.aspect = aspectRatio;
   camera.updateProjectionMatrix();
+  renderer.setSize(clientWidth, clientHeight);
   animate();
+  window.addEventListener("resize", () => {
+    const { clientWidth, clientHeight } = target.value;
+    const aspectRatio = clientWidth / clientHeight;
+    camera.aspect = aspectRatio;
+    camera.updateProjectionMatrix();
+    renderer.setSize(clientWidth, clientHeight);
+  });
   window.addEventListener("mousemove", trackMouse);
 });
 </script>
 
 <template>
-  <div class="hidden lg:block" ref="target"></div>
+  <div
+    class="hidden lg:block xl:w-1/2"
+    ref="target"
+  ></div>
 </template>
