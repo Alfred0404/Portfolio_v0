@@ -1,7 +1,14 @@
 <script setup>
 import { onMounted, ref } from "vue";
+import Tag from "./Tag.vue";
 
-const props = defineProps(["periode", "statut", "diplome", "etablissement"]);
+const props = defineProps([
+  "periode",
+  "statut",
+  "diplome",
+  "etablissement",
+  "courses",
+]);
 const elementRef = ref(null);
 
 onMounted(() => {
@@ -91,6 +98,11 @@ onMounted(() => {
           {{ props.etablissement }}
         </p>
       </div>
+      <ul class="flex max-w-lg flex-wrap">
+        <li v-for="course in props.courses" :key="course">
+          <Tag class="mr-2 mt-4" :tag_name="course" />
+        </li>
+      </ul>
       <div
         class="absolute -left-0 h-5 w-5 rounded-full bg-slate-600"
         v-if="props.statut === 'check'"

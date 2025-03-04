@@ -11,6 +11,7 @@ The project is built with the following technologies:
 
 - **[Vue.js](https://vuejs.org/)** : A progressive JavaScript framework for building user interfaces.
 - **[Tailwind CSS](https://tailwindcss.com/)** : A CSS utility framework for fast, easy-to-customize design.
+- **[Three.js](https://threejs.org/)** : (soon)
 
 ## 🚀 How to use it
 

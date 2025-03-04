@@ -40,16 +40,41 @@ const projects = ref([
     link: "https://github.com/Alfred0404/ece-world-paris-ing1-2022-2023-nintendeau",
   },
 ]);
+
+const current_project = ref([
+  {
+    name: "Smart Fridge - Recipe generator",
+    tag_name: "Personnal project",
+    description:
+      "Un réfrigérateur équipé de computer vision permettant de de mettre a jour son inventaire, et suggérer des recettes à base de son inventaire.",
+    stack: ["python", "flask", "Ollama", "OpenCV", "Ultralytics", "tailwind"],
+    image_path: "/smart_fridge.png",
+    link: "https://github.com/Alfred0404/Smart_Fridge_Project_Code",
+  },
+]);
 </script>
 
 <template>
   <div
-    class="mb-44 flex flex-col items-center justify-center bg-slate-950 text-slate-50"
+    class="mb-24 flex flex-col items-center justify-center bg-slate-950 text-slate-50"
   >
     <h1 class="py-20 text-center text-4xl">Mes projets</h1>
     <div class="mx-48 flex flex-wrap justify-center gap-10 py-10">
       <Project
         v-for="project in projects"
+        :key="project.name"
+        :name="project.name"
+        :tag_name="project.tag_name"
+        :description="project.description"
+        :stack="project.stack"
+        :image_path="project.image_path"
+        :link="project.link"
+      />
+    </div>
+    <h1 class="text-center text-3xl mt-8">En cours</h1>
+    <div class="mx-48 flex flex-wrap justify-center gap-10 py-10">
+      <Project
+        v-for="project in current_project"
         :key="project.name"
         :name="project.name"
         :tag_name="project.tag_name"

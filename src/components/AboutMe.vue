@@ -5,8 +5,8 @@
     class="mb-44 flex w-full flex-col items-center justify-center gap-32 bg-slate-950 text-slate-50 lg:flex-row lg:items-start"
   >
     <h1 class="text-4xl">A propos de moi</h1>
-    <p class="text-md w-3/5 leading-8 text-slate-300 lg:w-2/5">
-      Etudiant à
+    <p class="text-md w-3/5 lg:w-2/5 leading-8 text-slate-300">
+      Etudiant en ingénierie à
       <a
         class="border-emerald-400 text-emerald-400 hover:border-b-2"
         href="https://www.ece.fr/"

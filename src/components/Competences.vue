@@ -16,16 +16,26 @@ const competences = [
   <div class="mx-20 mb-44 bg-slate-950 text-slate-50 md:mx-0">
     <h1 class="py-20 text-center text-4xl flex justify-center">Compétences</h1>
     <div class="flex items-center justify-center">
-      <ul class="grid max-w-xl grid-cols-5 grid-rows-3 gap-3 md:gap-10">
+      <ul class="grid lg:grid-cols-7 gap-2 md:gap-2 grid-cols-4">
         <li
-          class="justitfy-center flex items-center md:p-2"
+          class="justitfy-center flex items-center"
           v-for="competence in competences"
           :key="competence"
         >
-          <img
-            :src="`/logo_${competence}.png`"
-            :alt="`${competence} logo`"
-          />
+          <div class="group flex flex-col items-center gap-3">
+            <div class="flex h-14 w-14 items-center justify-center">
+              <img
+                class="object-cover"
+                :src="`/logo_${competence}.png`"
+                :alt="`${competence} logo`"
+              />
+            </div>
+            <p
+              class="text-center text-sm text-slate-400 transition group-hover:text-emerald-400 cursor-default"
+            >
+              {{ competence }}
+            </p>
+          </div>
         </li>
       </ul>
     </div>
