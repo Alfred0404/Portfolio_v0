@@ -14,7 +14,7 @@ const competences = [
 
 <template>
   <div class="mx-20 mb-44 bg-slate-950 text-slate-50 md:mx-0">
-    <h1 class="py-20 text-center text-4xl flex justify-center">Competences</h1>
+    <h1 class="py-20 text-center text-4xl flex justify-center">Compétences</h1>
     <div class="flex items-center justify-center">
       <ul class="grid max-w-xl grid-cols-5 grid-rows-3 gap-3 md:gap-10">
         <li

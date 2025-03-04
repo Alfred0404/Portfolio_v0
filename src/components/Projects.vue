@@ -13,6 +13,15 @@ const projects = ref([
     link: "https://github.com/Alfred0404/Projet_Web_Dynamique_Sportify",
   },
   {
+    name: "Genetic AI Racer",
+    tag_name: "School project",
+    description:
+      "Implémentation d'un algorithme génétique pour l'entrainement d'agents autonomes sur un jeu de course, grâce à un réseau de neurones et d'un systme de récompenses.",
+    stack: ["python"],
+    image_path: "/genetic_ai_racer.png",
+    link: "https://github.com/Alfred0404/genetic_ai_racer",
+  },
+  {
     name: "Rocket League Esport",
     tag_name: "Personnal project",
     description:

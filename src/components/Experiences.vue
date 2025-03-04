@@ -4,10 +4,26 @@ import ExperienceElement from "./ExperienceElement.vue";
 
 const experiences = ref([
   {
+    periode: "2024 - 2025",
+    status: "en_cours",
+    contrat: "",
+    experience: "Vice président Création",
+    entreprise: "Network Gaming Association",
+    competences: ["leadership", "team working", "canva", "design", "communication"]
+  },
+  {
+    periode: "Jan 2025 - Jan 2025",
+    status: "check",
+    contrat: "Stage",
+    experience: "Stagiaire Data Scientist",
+    entreprise: "Crédit Agricole Assurances",
+    competences: ["annotation", "pandas", "python"]
+  },
+  {
     periode: "Jan 2024 - Jan 2024",
     status: "check",
     contrat: "Stage",
-    experience: "Data Scientist",
+    experience: "Stagiaire Data Scientist",
     entreprise: "Havas DBi",
     competences: [
       "python",
@@ -16,23 +32,15 @@ const experiences = ref([
       "teamwork",
       "pandas",
       "numpy",
-    ],
+    ]
   },
   {
-    periode: "2023 - ...",
-    status: "en_cours",
-    contrat: "",
-    experience: "Vice président Création",
-    entreprise: "Network Gaming Association",
-    competences: ["team working", "canva", "design", "communication"],
-  },
-  {
-    periode: "2012 - 2022",
+    periode: "2023 - 2024",
     status: "check",
     contrat: "",
-    experience: "Scoutisme",
-    entreprise: "Troupe 1ère Mesnil-Le-Roi",
-    competences: ["leadership", "team working", "bénévolat", "communication"],
+    experience: "Responsable Création",
+    entreprise: "Network Gaming Association",
+    competences: ["team working", "canva", "design", "communication"]
   },
   {
     periode: "2023",
@@ -40,8 +48,16 @@ const experiences = ref([
     contrat: "Bénévole",
     experience: "Aide aux devoirs",
     entreprise: "AFEV",
-    competences: ["bénévolat", "communication", "pédagogie"],
+    competences: ["bénévolat", "pédagogie"]
   },
+  {
+    periode: "2012 - 2022",
+    status: "check",
+    contrat: "",
+    experience: "Scoutisme",
+    entreprise: "Troupe 1ère Mesnil-Le-Roi",
+    competences: ["leadership", "team working", "bénévolat", "communication"]
+  }
 ]);
 </script>
 

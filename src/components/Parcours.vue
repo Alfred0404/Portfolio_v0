@@ -11,7 +11,7 @@ const parcours = ref([
   },
   {
     periode: "Sep 2024 - Dec 2024",
-    statut: "en_cours",
+    statut: "check",
     diplome: "Computer Science Major",
     etablissement: "Baruch College - New York, Manhattan",
   },

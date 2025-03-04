@@ -18,7 +18,7 @@ onMounted(() => {
 <template>
   <div ref="elementRef" class="bg-slate-950 text-slate-50">
     <div
-      class="group relative flex cursor-pointer flex-col items-start py-10 ps-10 text-slate-400 after:absolute after:left-[8px] after:top-20 after:z-10 after:h-3/4 after:w-0.5 after:bg-slate-900"
+      class="group relative flex flex-col items-start py-10 ps-10 text-slate-400 after:absolute after:left-[8px] after:top-20 after:z-10 after:h-3/4 after:w-0.5 after:bg-slate-900"
       :style="{ '--after-display': 'block' }"
     >
       <p

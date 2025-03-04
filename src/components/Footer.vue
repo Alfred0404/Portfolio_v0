@@ -29,7 +29,6 @@
     </ul>
     <ul class="flex flex-col md:flex-row gap-4 items-center justify-evenly md:gap-10">
       <li><p>© Alfred de Vulpian - 2024 - tous droits réservés</p></li>
-      <li>+33 7 82 91 91 49</li>
       <li>
         <a
           class="transition hover:text-emerald-400"

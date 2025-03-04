@@ -18,7 +18,7 @@
         class="border-emerald-400 text-emerald-400 hover:border-b-2"
         href="https://github.com/Alfred0404?tab=repositories"
         >projets personnels</a
-      >, j'ai pu acquérir une solide base de connaissances en informatique,
+      >, j'ai pu acquérir une solide base de connaissances en programmation,
       notament en <span class="border-b border-slate-300">Python</span> et en
       <span class="border-b border-slate-300">développement web</span
       >.<br /><br />Mon objectif est de me spécialiser dans
