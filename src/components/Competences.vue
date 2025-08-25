@@ -9,6 +9,7 @@ const competences = [
   "sql",
   "jquery",
   "phpmyadmin",
+  "docker",
 ];
 </script>
 

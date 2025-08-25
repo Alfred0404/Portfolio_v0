@@ -4,6 +4,15 @@ import { ref } from "vue";
 
 const projects = ref([
   {
+    name: "GAN - Generative Adversarial Network",
+    tag_name: "Personnal project",
+    description:
+      "Implémentation d'un GAN (Generative Adversarial Network) pour la génération d'images à partir de bruit aléatoire, en utilisant PyTorch.",
+    stack: ["python"],
+    image_path: "/gan.png",
+    link: "https://github.com/Alfred0404/gan",
+  },
+  {
     name: "Sportify",
     tag_name: "School project",
     description:
@@ -20,37 +29,19 @@ const projects = ref([
     stack: ["python"],
     image_path: "/genetic_ai_racer.png",
     link: "https://github.com/Alfred0404/genetic_ai_racer",
-  },
-  {
-    name: "Rocket League Esport",
-    tag_name: "Personnal project",
-    description:
-      "Rocket League Esport est une application web permettant de voir des informations sur des matchs d'e-sport Rocket League, passé ou à venir, grâce à l'API octane.gg.",
-    stack: ["vue", "nodejs"],
-    image_path: "/rl_esport.png",
-    link: "https://github.com/Alfred0404/rocket-esport-vue",
-  },
-  {
-    name: "ECE-World",
-    tag_name: "School project",
-    description:
-      "ECE-World est un projet réalisé dans le cadre de mes études consistant en un jeu top-down 2D contenant plusieurs mini-jeux (guitar hero, labyrinthe, etc).",
-    stack: ["c", "allegro"],
-    image_path: "/eceworld.png",
-    link: "https://github.com/Alfred0404/ece-world-paris-ing1-2022-2023-nintendeau",
-  },
+  }
 ]);
 
 const current_project = ref([
   {
-    name: "Smart Fridge - Recipe generator",
+    name: "HunterShip",
     tag_name: "Personnal project",
     description:
-      "Un réfrigérateur équipé de computer vision permettant de de mettre a jour son inventaire, et suggérer des recettes à base de son inventaire.",
-    stack: ["python", "flask", "Ollama", "OpenCV", "Ultralytics", "tailwind"],
-    image_path: "/smart_fridge.png",
-    link: "https://github.com/Alfred0404/Smart_Fridge_Project_Code",
-  },
+      "Projet visant à accompagner la recherche d'emploi en automatisant certaines tâches comme la recherche d'offres, la gestion des candidatures et l'envoi d'emails.",
+    stack: ["python"],
+    image_path: "/huntership.png",
+    link: "https://github.com/Alfred0404/huntership",
+  }
 ]);
 </script>
 
